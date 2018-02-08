@@ -1,5 +1,17 @@
 html, body {
   background: #f0f0f0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 /*---------------- HEADER ---------------*/
@@ -8,6 +20,7 @@ html, body {
   min-height: 43px;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .header .wrapper {
@@ -37,9 +50,18 @@ html, body {
   height: 100%;
 }
 .nav-item {
-  height: 43px;
+  height: 50px; /*Including 3px on top and 4px at bottom*/
   width: 60px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav-item i {
+  font-size: 2rem;
+  margin-top: 3px;
+  margin-bottom: -10px;
 }
 
 .nav-item:hover {
@@ -56,7 +78,7 @@ html, body {
 
 .main .ad-carousel {
   width: 100%;
-  height: 380px;
+  height: 100%;
   background: white;
   position: relative;
   white-space: nowrap;
@@ -65,27 +87,33 @@ html, body {
 
 .main .ad-carousel .ad-item {
   width: 100%;
-  height: 100%;
+  height: 90%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
 
+.main .ad-carousel .ad-item img {
+  width: 100%;
 }
 
 .navigate-button {
   position: absolute;
   font-size: 1.3rem;
   z-index: 100;
-  height: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  height: 48px;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
+  border-radius: 5px;
+  color: white;
 }
 
 #next, #prev {
-  top: calc((100% - 30px) / 2);
+  top: calc((90% - 30px) / 2);
   cursor: pointer;
 }
 
@@ -97,6 +125,17 @@ html, body {
   left: 10px;
 }
 
+.ad-item-details {
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ad-item-details .item-detail {
+  border-left: 1px solid rgb(175, 175, 175);
+  height: 100%;
+}
+
 /*news*/
 
 .news {
@@ -106,7 +145,7 @@ html, body {
 
 .news .heading {
   height: 38px;
-  width: 30%;
+  width: 40%;
   background: #fed700;
   color: black;
   padding-left: 10px;
@@ -134,17 +173,8 @@ html, body {
 }
 
 .news .content .thumbnail {
-  width: 90px;
-  height: 70px;
+  width: 100%;
   background: #f5f5f5;
-  display: inline-block;
-}
-
-.news .content .title {
-  width: 70%;
-  display: inline-block;
-  height: 100%;
-  float: right;
 }
 
 .ads-banner {
@@ -157,21 +187,27 @@ html, body {
   align-items: center;
 }
 
+.ads-banner img {
+  width: 100%;
+}
+
 /*ribbon*/
 
 .ribbon {
-  height: 40px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  background: white;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background: url('https://www.thegioididong.com/Content/desktop/images/bg_tet_home_2018.png');
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-size: 1.2rem;
 }
 
 .hot-product-carousel {
   width: 100%;
-  height: 250px;
   background: white;
   position: relative;
   white-space: nowrap;
@@ -185,9 +221,66 @@ html, body {
   text-align: center;
 }
 
+.hot-product-carousel .product-carousel-item p {
+  margin-top: 5px;
+}
+
+.hot-product-carousel .product-carousel-item p:last-child {
+  margin-bottom: 20px;
+}
+
 .hot-product-carousel .product-carousel-item .thumbnail {
   width: 70%;
-  height: 70%;
-  margin: 10px calc((100% - 70%) / 2);
+  margin: 20px calc((100% - 70%) / 2);
   background: #f5f5f5;
+}
+
+.hot-product-carousel .product-carousel-item .thumbnail img {
+  width: 100%;
+}
+
+
+/*hottest-product*/
+.hottest-product {
+  margin-top: 20px;
+  background: white;
+}
+
+.hottest-product h2 {
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.hottest-product .categories {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hottest-product-grid {
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hottest-product-item{
+  border: 1px solid #d4d4d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  flex-direction: column;
+}
+
+.hottest-product-item:not(.feature) img {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.hottest-product-item:not(.feature) {
+  width: 20%;
+}
+
+.hottest-product-item.feature {
+  width: 40%;
 }

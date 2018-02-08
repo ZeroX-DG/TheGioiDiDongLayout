@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
@@ -28,10 +30,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <i class="fa fa-mobile"></i>
+              <a class="nav-link" href="#">Phone</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <i class="fa fa-tablet"></i>
+              <a class="nav-link" href="#">Tablet</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa fa-laptop"></i>
+              <a class="nav-link" href="#">Laptop</a>
             </li>
           </ul>
         </div>
@@ -41,74 +49,166 @@
   </div>
   <div class="main">
     <div class="row">
-      <div class="col-8">
+      <div class="col-md-8 col-xs-12">
         <div class="ad-carousel">
-          <div class="ad-item">
-            Quang cao 1
+          <div class="ad-carousel-slides">
+            <div class="ad-item">
+              <img src="https://cdn1.tgdd.vn/qcao/02_02_2018_15_31_25_big-samsung-800-300.png" alt="">
+            </div>
+            <div class="ad-item">
+              <img src="https://cdn1.tgdd.vn/qcao/15_01_2018_17_21_07_Pin-sac-800-300.png" alt="">
+            </div>
+            <div class="ad-item">
+              <img src="https://cdn1.tgdd.vn/qcao/08_02_2018_09_53_53_Big-Huawei-800-300.png" alt="">
+            </div>
           </div>
-          <div class="ad-item">
-            Quang cao 2
-          </div>
-          <div class="ad-item">
-            Quang cao 3
+          <div class="ad-item-details row">
+            <div class="item-detail col">
+              Tết sắm SamSung
+            </div>
+            <div class="item-detail col">
+              Pin sạc dự phòng
+            </div>
+            <div class="item-detail col">
+              Mua Huawei Nova 2i
+            </div>
           </div>
           <span class="navigate-button" id="next">&gt;&gt;</span>
           <span class="navigate-button" id="prev">&lt;&lt;</span>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-md-4 col-xs-12">
         <div class="news">
           <div class="heading">
-            <p>News</p>
+            <p>Tin công nghệ</p>
           </div>
           <div class="content">
-            <div class="thumbnail"></div>
-            <p class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
+            <div class="row">
+              <div class="col-4">
+                <div class="thumbnail">
+                  <img src="https://cdn1.tgdd.vn/Files/2018/02/08/1065626/xiaomi-mi-note-5_800x450-100x100.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-8">
+                <p class="title">
+                  Xiaomi sẽ ra mắt Redmi Note 5 vào ngày 14/2/2018?
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="ads-banner">Banner 1</div>
-        <div class="ads-banner">Banner 2</div>
+        <div class="ads-banner">
+          <img src="https://cdn1.tgdd.vn/qcao/16_01_2018_16_08_15_big-samsung-398-110.png" alt="">
+        </div>
+        <div class="ads-banner">
+          <img src="https://cdn2.tgdd.vn/qcao/17_01_2018_16_45_10_Sony-Sticky-398-110.png" alt="">
+        </div>
       </div>
       <div class="col-12">
         <div class="ribbon">
-          Sale off 100%
+          Khuyễn mãi hot nhất
         </div>
       </div>
       <div class="col-12">
         <div class="hot-product-carousel">
           <div class="product-carousel-item">
-            <div class="thumbnail"></div>
+            <div class="thumbnail">
+              <img src="https://cdn.tgdd.vn/Products/Images/42/112970/samsung-galaxy-j7-plus-hh-400x400.jpg" alt="">
+            </div>
             <p>Phone 1</p>
             <p>10,000 vnd</p>
           </div>
           <div class="product-carousel-item">
-            <div class="thumbnail"></div>
+            <div class="thumbnail">
+              <img src="https://cdn1.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-hh-400x400.jpg" alt="">
+            </div>
             <p>Phone 2</p>
             <p>120,000 vnd</p>
           </div>
           <div class="product-carousel-item">
-            <div class="thumbnail"></div>
+            <div class="thumbnail">
+              <img src="https://cdn1.tgdd.vn/Products/Images/42/106211/samsung-galaxy-note8-hh-400x400.jpg" alt="">
+            </div>
             <p>Phone 3</p>
             <p>999,999 vnd</p>
 
           </div>
           <div class="product-carousel-item">
-            <div class="thumbnail"></div>
+            <div class="thumbnail">
+              <img src="https://cdn1.tgdd.vn/Products/Images/42/91131/samsung-galaxy-s8-plus-hh-400x400.jpg" alt="">
+            </div>
             <p>Phone 4</p>
             <p>10,000,000 vnd</p>
           </div>
           <div class="product-carousel-item">
-            <div class="thumbnail"></div>
+            <div class="thumbnail">
+              <img src="https://cdn3.tgdd.vn/Products/Images/42/141763/oppo-f5-youth-vang-hong-6001-400x400.jpg" alt="">
+            </div>
             <p>Phone 5</p>
             <p>156,000 vnd</p>
           </div>
           <div class="product-carousel-item">
-            <div class="thumbnail"></div>
+            <div class="thumbnail">
+              <img src="https://cdn4.tgdd.vn/Products/Images/42/138399/vivo-v7-hh-400x400.jpg" alt="">
+            </div>
             <p>Phone 6</p>
             <p>20,000 vnd</p>
           </div>
           <span class="navigate-button" id="next">&gt;&gt;</span>
           <span class="navigate-button" id="prev">&lt;&lt;</span>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="hottest-product">
+          <div class="row no-gutter">
+            <div class="heading col-md-5 col-xs-12">
+              <h2>Điện thoại nổi bật nhất</h2>
+            </div>
+            <div class="categories col-7">
+              <a href="https://www.thegioididong.com/dtdd-apple-iphone">Apple iPhone</a>
+              <a href="https://www.thegioididong.com/dtdd-samsung">Samsung</a>
+              <a href="http://thegioididong.com/dtdd?f=man-hinh-tran-vien">Màn hình tràn viền</a>
+              <a href="https://www.thegioididong.com/dtdd?p=tu-2-7-trieu">Giá từ 2-7 triệu</a>
+              <a href="https://www.thegioididong.com/dtdd?s=tra-gop-0-phan-tram">Trả góp 0%</a>
+              <a href="/dtdd" class="mobile">Xem tất cả
+                <b>163</b> điện thoại</a>
+            </div>
+            <div class="hottest-product-grid col-12">
+              <div class="hottest-product-item feature">
+                <img src="https://cdn4.tgdd.vn/Products/Images/42/103404/Feature/samsung-galaxy-j7-pro-2018-d-1.jpg" alt="">
+                <p>Samsung J7 pro</p>
+              </div>
+              <div class="hottest-product-item">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/131915/oppo-f5-red-400x400.jpg" alt="">
+                <p>Oppo F5</p>
+              </div>
+              <div class="hottest-product-item">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-400x400.jpg" alt="">
+                <p>IphoneX</p>
+              </div>
+              <div class="hottest-product-item">
+                <img src="https://cdn3.tgdd.vn/Products/Images/42/118143/huawei-nova-2i-hh-400x400.jpg" alt="">
+                <p>Huawei Nova</p>
+              </div>
+              <div class="hottest-product-item feature xs-hide">
+                <img src="https://cdn4.tgdd.vn/Products/Images/42/91059/Feature/nokia-8-d.jpg" alt="">
+                <p>Nokia 8</p>
+              </div>
+              <div class="hottest-product-item">
+                <img src="https://cdn4.tgdd.vn/Products/Images/42/151859/sony-xperia-xa1-plus-vang-200x200.jpg" alt="">
+                <p>Sony Xperia</p>
+              </div>
+              <div class="hottest-product-item">
+                <img src="https://cdn3.tgdd.vn/Products/Images/42/84798/samsung-galaxy-j7-prime-hh-400x400.jpg" alt="">
+                <p>Galaxy J7 Prime</p>
+              </div>
+              <div class="hottest-product-item">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/145575/samsung-galaxy-j2-pro-2018-den-200x200.jpg" alt="">
+                <p>Galaxy J2 pro 2018</p>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
