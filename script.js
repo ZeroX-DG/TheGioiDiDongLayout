@@ -40,3 +40,7 @@ function createCarousel(carousel_container, slide_container, carousel_item) {
     }, carousel_animate_time);
   });
 }
+
+function ShowMoreFooterSupportLink() {
+  $("footer .hidden").css("display", "block");
+}

@@ -1,4 +1,7 @@
-@media all and (max-width: 480px) { 
+@media all and (max-width: 480px) {
+  body, html {
+    overflow-x: hidden;
+  }
   .news, .ad-item-details, .hottest-product .categories {
     display: none;
   }
@@ -25,5 +28,12 @@
     width: 50%;
     height: auto;
   }
+
+  .hottest-product-item.xs-inline {
+    width: calc(100% / 3);
+  }
   
+  .xs-hottest-product-navigation {
+    display: flex;
+  }
 }
