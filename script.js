@@ -41,6 +41,7 @@ function createCarousel(carousel_container, slide_container, carousel_item) {
   });
 }
 
-function ShowMoreFooterSupportLink() {
+function ShowMoreFooterSupportLink(e) {
   $("footer .hidden").css("display", "block");
+  $(".showmore").css("display", "none");
 }

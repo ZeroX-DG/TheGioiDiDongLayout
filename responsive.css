@@ -36,4 +36,60 @@
   .xs-hottest-product-navigation {
     display: flex;
   }
+
+  .xs-hidden {
+    display: none !important;
+  }
+
+  .xs-show {
+    display: block !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  body, html {
+    overflow-x: hidden;
+  }
+  .news, .ad-item-details, .hottest-product .categories {
+    display: none;
+  }
+  
+  .main {
+    width: 100%;
+    margin: 0;
+  }
+
+  .hot-product-carousel .product-carousel-item {
+    width: auto;
+  }
+
+  .hottest-product-item.feature, .hottest-product-item.feature img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .hottest-product-item.feature.xs-hide {
+    display: none;
+  }
+
+  .hottest-product-item, .hottest-product-item:not(.feature) {
+    width: 50%;
+    height: auto;
+  }
+
+  .hottest-product-item.xs-inline {
+    width: calc(100% / 3);
+  }
+  
+  .xs-hottest-product-navigation {
+    display: flex;
+  }
+
+  .xs-hidden {
+    display: none !important;
+  }
+
+  .xs-show {
+    display: block !important;
+  }
 }
