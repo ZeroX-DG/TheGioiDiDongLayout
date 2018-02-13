@@ -45,15 +45,29 @@
     display: block !important;
   }
 }
-
-@media all and (max-width: 768px) {
+/*IPAD*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
   body, html {
     overflow-x: hidden;
   }
   .news, .ad-item-details, .hottest-product .categories {
     display: none;
   }
+
+  .newsbox {
+    flex: none;
+    max-width: 100%;
+  }
   
+  .carousel-box {
+    flex: none;
+    max-width: 100%;
+  }
+
   .main {
     width: 100%;
     margin: 0;
@@ -61,6 +75,11 @@
 
   .hot-product-carousel .product-carousel-item {
     width: auto;
+  }
+
+  .heading.col-sm-12 {
+    max-width: 100%;
+    flex: none;
   }
 
   .hottest-product-item.feature, .hottest-product-item.feature img {
@@ -92,4 +111,10 @@
   .xs-show {
     display: block !important;
   }
+
+  footer .col-sm-6 {
+    max-width: 50% !important;
+    flex: none !important;
+  }
 }
+
